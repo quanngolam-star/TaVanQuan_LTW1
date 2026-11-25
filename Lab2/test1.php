@@ -123,6 +123,7 @@ $students = [
             padding: 20px;
             background-color: white;
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
         }
 
         .s2 h3 {
@@ -173,36 +174,34 @@ $students = [
                 echo "<li>$subject</li>";
             }
             ?>
-                        
+
         </ul>
     </section>
-
-    <section class="s2"></section>
     <section class="s2">
-                <h3>Danh sách sinh viên</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>STT</th>
-                            <th>Mã sinh viên</th>
-                            <th>Họ và tên</th>
-                            <th>Giới tính</th>
-                            <th>Lớp</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($students as $index => $student) { ?>
-                            <tr>
-                                <td><?= $index + 1 ?></td>
-                                <td><?= $student["id"] ?></td>
-                                <td><?= $student["name"] ?></td>
-                                <td><?= $student["gender"] ?></td>
-                                <td><?= $student["class"] ?></td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-            </section>
+        <h3>Danh sách sinh viên</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã sinh viên</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Lớp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($students as $index => $student) { ?>
+                    <tr>
+                        <td><?= $index + 1 ?></td>
+                        <td><?= $student["id"] ?></td>
+                        <td><?= $student["name"] ?></td>
+                        <td><?= $student["gender"] ?></td>
+                        <td><?= $student["class"] ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+    </section>
 </body>
 
 </html>
