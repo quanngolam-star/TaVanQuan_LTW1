@@ -21,7 +21,7 @@ $students = [
         "gender" => "Nữ",
         "class" => "CNTT2"
     ],
-        [
+    [
         "id" => "SV003",
         "name" => "Lê Văn Cường",
         "gender" => "Nam",
@@ -118,18 +118,16 @@ $students = [
         }
 
         .s2 {
-            max-width: 500px;
-            margin: auto;
+            max-width: 700 px;
+            margin: 10px auto;
             padding: 20px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
         .s2 h3 {
-            text-align: center;
-            color: #0d6efd;
-            margin-bottom: 20px;
+            color: black;
+            margin-top: 0;
         }
 
         .s2 table {
@@ -175,9 +173,12 @@ $students = [
                 echo "<li>$subject</li>";
             }
             ?>
+                        
         </ul>
-        <section>
-            <section class="s2">
+    </section>
+
+    <section class="s2"></section>
+    <section class="s2">
                 <h3>Danh sách sinh viên</h3>
                 <table>
                     <thead>
